@@ -22,13 +22,9 @@ void render() {
    unsigned char black[]   = { 0,   0,   0   };
    unsigned char yellow[]  = { 255, 255, 0   };
 
-   // Draw black text on cyan
-   image.draw_text(32,32,"[ ] The first one task of the day...",white,bg,1,14);
+   image.draw_text(32,32,"This is dynamically generated",white,bg,1,14);
+   image.draw_text(32,52,"background by WallGen",white,bg,1,14);
 
-   // Draw yellow partially transparent text on black
-   image.draw_text(32,52,"[ ] This should be done as a second",white,bg,1,14);
-
-   // Save result image as NetPBM PNM - no libraries required
    image.save_bmp("D:\\new-wallpaper.bmp");
 }
 
